@@ -1,10 +1,13 @@
 :root {
-    --navcolor: antiquewhite;
     --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --color1: rgba(82, 220, 255, 0.397);
     --color2: rgb(201, 236, 245);
     --color3: rgb(29, 41, 44);
     --color4: antiquewhite;
+}
+
+* {
+    background-color: var(--color2);
 }
 
 header {
@@ -30,6 +33,8 @@ h1 {
 nav { 
     display: flex;
     flex-wrap: wrap;
+    margin: 0 10px 0 0;
+    background-color: var(--color3);
 }
 
 a {
@@ -47,24 +52,73 @@ a {
 }
 
 section {
-    background-color: var(--color2) ;
-    display: flex;
-}
-
-aside {
 }
 
 h2 {
-    color:  rgb(29, 41, 44);
+    color:  var(--color3);
     font-family: var(--font);
     font-size: 50px;
     margin: 50px;
+    border-style: solid;
+    border-width: 0 4px 0 0;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#about {
+    width: 200px;
 }
 
 p {
     display: flex;
     flex: 1 0 500px;
-    margin: 50px 0 0 0;
+    margin: 50px 10px 0 0;
+    height: 100px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#work {
+    width: 200px;
+}
+
+img {
+    height: 250px;
+    width: 500px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--color1);
+    box-shadow: 5px 5px 5px grey;
+}
+
+/*#img1 {
+    height: 500px;
+    width: 1000px;
+    margin: 50px 10px 10px 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--color1);
+    box-shadow: 5px 5px 5px grey;  
+}*/
+
+#contact {
+    height: 100px;
+    width: 200px;
+}
+
+#resume {
+    height: 50px;
+    width: 200px;
 }
 
 @media screen and (max-width: 768px) {
