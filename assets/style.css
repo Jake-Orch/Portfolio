@@ -1,25 +1,27 @@
 :root {
     --navcolor: antiquewhite;
     --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    --bordercol: antiquewhite;
-    --background: rgba(70, 196, 255, 0.397);
+    --color1: rgba(82, 220, 255, 0.397);
+    --color2: rgb(201, 236, 245);
+    --color3: rgb(29, 41, 44);
+    --color4: antiquewhite;
 }
 
 header {
-    background-color: rgb(29, 39, 44);
+    background-color: var(--color3);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 {
-    color: var(--navcolor);
+    color: var(--color4);
     font-size: 50px;
     font-family: var(--font);
-    background-color: var(--background);
+    background-color: var(--color1);
     border-style: solid;
     border-width: 2px 2px 2px 0;
-    border-color: var(--bordercol);
+    border-color: var(--color4);
     border-radius: 0 10px 10px 0;
     padding: 10px 10px 10px 40px;
     margin: 20px 0 20px 0;
@@ -33,15 +35,36 @@ nav {
 a {
     text-decoration: none;
     text-decoration: underline;
-    color: var(--navcolor);
+    color: var(--color4);
     font-size: 25px;
     font-family: var(--font);
-    background-color: var(--background);
+    background-color: var(--color1);
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+}
+
+section {
+    background-color: var(--color2) ;
+    display: flex;
+}
+
+aside {
+}
+
+h2 {
+    color:  rgb(29, 41, 44);
+    font-family: var(--font);
+    font-size: 50px;
+    margin: 50px;
+}
+
+p {
+    display: flex;
+    flex: 1 0 500px;
+    margin: 50px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -58,6 +81,9 @@ a {
         border-width: 2px;
         padding: 10px;
         margin: 10px 0px 0px 0px;
+    }
+    section {
+        flex-direction: column;
     }
 }
 
