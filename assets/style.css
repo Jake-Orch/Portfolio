@@ -59,6 +59,11 @@ section {
     display: flex;
 }
 
+p {
+    font-size: 20px;
+    font-family: var(--font);
+}
+
 .side {
     display: flex; 
     margin: 50px 50px 0 100px;
@@ -144,30 +149,44 @@ img:hover {
         text-align: center; 
     }
 
+    nav {
+        flex-direction: column;
+        margin: 0px;
+        width: 100%;
+    }
+
     h1 {
         border-radius: 10px;
         border-width: 2px;
         padding: 10px;
         margin: 10px 0px 0px 0px;
     }
+
+    .link {
+        margin: 10px 0 10px 0;
+    }
+
     h2 {
+        text-align: center;
         font-size: 25px;
-        text-align: right;
+        border-width: 0 0px 4px 0;
+        padding-right: 5px;
     }
+
     .side {
-        width: 100px;
-        margin-left:20px;
+        width: 150px;
+        margin: 50px 0 0 20px ;
     }
+
     section {
         flex-direction: column; 
     }
+
+    p {
+        font-size: 15px;
+    }
+
     .about, .contact, .work {
         padding: var(--smallpadding);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
     }
 }
