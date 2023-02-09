@@ -64,6 +64,11 @@ p {
     font-family: var(--font);
 }
 
+#photo {
+    position: fixed;
+    width: 150px;
+}
+
 .side {
     display: flex;
     margin: 50px 50px 0 100px;
@@ -129,11 +134,7 @@ h3 {
     font-size: 1vw;
 }
 
-#imgp{
-    width: 100%;
-}
-
-img {
+#img {
     display: flex;
     gap: 10px;
     width: 100%;
@@ -145,7 +146,7 @@ img {
     filter: opacity(50%);
 }
 
-img:hover {
+#img:hover {
     filter: opacity(100%);
 }
 
@@ -208,6 +209,11 @@ img:hover {
         margin: 10px 0 10px 0;
     }
 
+    #photo {
+        display: inline;
+        position: absolute;
+    }
+
     h2 {
         text-align: center;
         font-size: 25px;
@@ -232,5 +238,9 @@ img:hover {
     .contact,
     .work {
         padding: var(--smallpadding);
+    }
+
+    #about {
+        margin-top: 200px;
     }
 }
